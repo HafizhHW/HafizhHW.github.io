@@ -103,7 +103,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="row">
+                    <div class="row spouse">
                         <div class="col-8 text-end">
                             <h3>Hafizh Wijaya</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quae.</p>
