@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
 
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 
@@ -40,7 +42,7 @@
             <p>Mohon maaf bila ada kesalahan pada penulisan nama/gelar</p>
             <!-- <p>Akan melangsungkan resepsi pernikaha dalam: </p> -->
             <!-- <div class="simply-countdown"></div> -->
-            <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+            <a href="#undangan" class="btn btn-lg mt-4"> <i class="bi bi-envelope-paper-heart"></i> Lihat Undangan</a>
         </main>
     </section>
 
@@ -101,19 +103,22 @@
                     <p>Dengan memohon rahmat dan ridho Allah SWT kami bermaksud menyelengarakan pernikahan puta dan putri kami:</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row spouse">
                 <div class="col-lg-6">
-                    <div class="row spouse">
+                    <div class="row ">
                         <div class="col-8 text-end">
                             <h3>Hafizh Wijaya</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quae.</p>
-                            <p>Putra dai Alm. Bpk Loram <br> dan <br> Ibu Ipsum </p>
+                            <p>Putra dari Alm. Bpk Lorem <br> dan <br> Ibu Ipsum </p>
                         </div>
                         <div class="col-4">
                             <img src="assets/images/men.jpg" alt="Hafizh" class="img-resposive rounded-circle">
                         </div>
                     </div>
                 </div>
+
+                <span class="heart"><i class="bi bi-heart-fill h1"></i></span>
+
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-4">
@@ -122,7 +127,7 @@
                         <div class="col-8">
                             <h3>Sekar Ayu</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quae.</p>
-                            <p>Putra dai Bpk Ipsum <br> dan <br> Ibu Lorem </p>
+                            <p>Putri dari Bpk Ipsum <br> dan <br> Ibu Lorem </p>
                         </div>
                     </div>
                 </div>
