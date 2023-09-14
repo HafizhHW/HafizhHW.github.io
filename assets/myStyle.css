@@ -10,7 +10,7 @@ body{
     font-size: 1.3rem;
     font-family: 'Work Sans', sans-serif;
 
-    min-height: 2000px;
+    /* min-height: 5000px; */
 }
 
 .hero::before {
@@ -30,6 +30,8 @@ body{
 .hero{
     position: relative;
     min-height: 100vh;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
 }
 
 .hero h1, .hero h2, .hero h3, .hero h4, .hero p{
@@ -68,7 +70,7 @@ body{
     background-color: white;
 }
 
-.hero a:hover{
+.hero a:hover {
     color: white;
     background-color: var(--sage);
 }
@@ -123,6 +125,7 @@ backdrop-filter:blur(1.6px);
     margin-top: -6rem;
     padding-top: 16rem;
     padding-bottom: 5rem;
+    height: 100%;
     /* width: 100%;
     height: auto; */
 }
@@ -140,9 +143,10 @@ backdrop-filter:blur(1.6px);
     background-size: cover;
     background-position:center;
     min-height: 150vh;
-    margin-top: -6rem;
+    height: 100%;
     padding-top: 8rem;
     padding-bottom: 5rem;
+    /* margin-top: -6rem; */
 }
 
 .bismillah{
@@ -153,10 +157,12 @@ backdrop-filter:blur(1.6px);
     margin-top: 50px;
 }
 
-.couple .spouse h3{
-    font-family: 'Sacramento';
+.couple .spouse h3
+{
+    font-family: 'Sacramento', cursive;
     font-size: 2.6rem;
     color: var(--sage);
+    
 }
 
 .couple .spouse img {
@@ -166,22 +172,177 @@ backdrop-filter:blur(1.6px);
 .couple .heart {
     width: 60px;
     height: 60px;
-    /* background-color: red; */
     display: flex;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(100%);
+    transform: translateX(-50%) translateY(65px);
 }
 
-.couple .heart i{
+.couple .heart i,
+.event .icon i{
     margin: auto;
+    color: var(--sage);
 }
 
-.couple .heart i:hover{
-    color: var(--pink);
+.couple .heart i:hover,
+.event .icon i:hover{
+    color: var(--pink);   
+}
+
+
+.event {
+    background-image: url(./images/floral.png);
+    background-size: cover;
+    background-position:center;
+    min-height: 150vh;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
    
 }
+
+.event a{
+    /* margin-top:1rem;
+    margin-bottom: 3rem; */
+    color: var(--sage);
+    font-size: 1.6rem;
+    background-color:transparent;
+}
+
+.event a:hover{
+    color: white;
+    background-color: var(--sage);
+}
+
+.event h1,
+.gallery h1
+{
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    color: var(--sage);
+    /* font-weight: bold; */
+}
+
+.event h2, 
+.gallery h2
+{
+    font-size: 3rem;
+    padding-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.event h3
+{
+    font-size: 2rem;
+    padding-bottom: 2.3rem;
+    font-weight: 400;
+}
+
+.event p
+{
+    font-size: 1.5rem;
+    padding-bottom: 1.3rem;
+    padding-top: 2rem;
+    font-weight: 300;
+}
+
+.event .alamat p{
+    font-size: 1.4rem;
+}
+
+.event .card{
+    /* background-color: rgba(255, 255, 255, 0.2) !important; */
+    background-color: transparent !important;
+    border: 1.6px solid var(--sage);
+}
+
+.event .card-header{
+    /* background-color: rgba(255, 255, 255, 0.2) !important; */
+    background-color: transparent !important;
+    border-bottom:none ;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.event .card-body{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.event .simply-countdown>.simply-section :hover{
+    color: white;
+}
+
+.gallery {
+    background-image: url(./images/floral2.png);
+    background-size: cover;
+    background-position:center;
+    min-height: 150vh;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+   
+}
+
+.gift {
+    background-image: url(./images/floral.png);
+    background-size: cover;
+    background-position:center;
+    min-height: 150vh;
+    height: 100%;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+   
+}
+
+.gift h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    color: var(--sage);
+    padding-bottom: 2rem;
+}
+
+.gift h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.gift p
+{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.gift .card{
+    background-color: rgb(255, 255, 255) !important;
+    /* background-color: transparent !important; */
+    border: 1px solid var(--sage);
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    /* border-radius: 15px 50px 30px; */
+}
+
+
+.gift .card-body{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.rsvp{
+    padding-top: 8rem;
+    /* padding-bottom: 10rem; */
+}
+
+.rsvp .card-body{
+    /* margin-top: 10rem; */
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid var(--sage);
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
 
 
 
@@ -193,6 +354,13 @@ backdrop-filter:blur(1.6px);
 
 /* Extra Large */
 @media(max-width: 1200px){
+    .couple .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+
+    .event .simply-countdown>.simply-section {
+        padding: 50px; 
+    }
 
 }
 
@@ -202,7 +370,14 @@ backdrop-filter:blur(1.6px);
     html {
         font-size: 75%;
     }
-   
+
+    .couple .heart {
+        display: none;
+    }
+
+    .event .simply-countdown>.simply-section {
+        padding: 47px; 
+    }
 
 }
 
@@ -218,6 +393,15 @@ backdrop-filter:blur(1.6px);
         text-align: center;
     }
 
+    .event .simply-countdown>.simply-section {
+        padding: 38px;
+        margin: 3px;
+    }
+
+    .sticky-top{
+        overflow: hidden;
+    }
+
 }
 
 /* Mobile Phone */
@@ -231,6 +415,11 @@ backdrop-filter:blur(1.6px);
         /* text-shadow: var(--shadow); */
     
     }
+
+    .event .simply-countdown>.simply-section {
+        padding: 36px;
+        margin: 1.2px;
+    }
  
 }
 
@@ -238,6 +427,11 @@ backdrop-filter:blur(1.6px);
 
     .hero h1{
         font-size: 4.5rem;
+    }
+
+    .event .simply-countdown>.simply-section {
+        padding: 30px;
+        margin: 1px;
     }
   
 }
